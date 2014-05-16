@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>49D5AC08-D8C0-4A7C-A4A7-FB4C088CA4C0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BankYiDou</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>52FEC942-CA0E-4AD9-B0F5-7A8735C2CCBB</key>
+		<string>https://github.com/zzlmilk/BankYiDou.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>BankYiDou.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>52FEC942-CA0E-4AD9-B0F5-7A8735C2CCBB</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/zzlmilk/BankYiDou.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>52FEC942-CA0E-4AD9-B0F5-7A8735C2CCBB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>52FEC942-CA0E-4AD9-B0F5-7A8735C2CCBB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>BankYiDou</string>
+		</dict>
+	</array>
+</dict>
+</plist>

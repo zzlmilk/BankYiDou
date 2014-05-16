@@ -9,26 +9,16 @@
 #import "AppDelegate.h"
 #import "LoginViewController.h"
 
+
+
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+
     
-//    LoginViewController * loginViewController = [[LoginViewController alloc]init];
-//    
-//    [self.window setRootViewController:loginViewController];
-    
-    
-    UIStoryboard *stryBoard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    
-    self.window.rootViewController=[stryBoard instantiateInitialViewController];
-    
-    [self.window makeKeyAndVisible];
-    
-    
+      
     return YES;
 }
 
