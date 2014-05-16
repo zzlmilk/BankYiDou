@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A14BCE9A-89DB-406C-BA65-1E9E952F0DBB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BankAPP</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B8C8EB62-46A6-450E-92AF-52D8AAB12E9C</key>
+		<string>svn://172.16.204.228</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>project/BankAPPSlideMenu/BankAPP.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B8C8EB62-46A6-450E-92AF-52D8AAB12E9C</key>
+		<string>../../../../../../../..</string>
+		<key>DF220932-4B24-4E7C-9B46-B2C9E7864BAF</key>
+		<string>../../../../../../../../../bankvip/bankvip</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>B8C8EB62-46A6-450E-92AF-52D8AAB12E9C</key>
+		<string>svn://172.16.204.228</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>svn://172.16.204.228/eduo/dev/app/ios/project/BankAPPSlideMenu/BankAPP.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B8C8EB62-46A6-450E-92AF-52D8AAB12E9C</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B8C8EB62-46A6-450E-92AF-52D8AAB12E9C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SVN</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="EMEApp" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5063" systemVersion="13C64" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="DialogEntity" syncable="YES">
+        <attribute name="contents" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fromUid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="groupId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="loginUid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="messageId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="messageSendStatus" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="messageType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toUid" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="RecentContactsEntity" syncable="YES">
+        <attribute name="contactHeadUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contactNickName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contactUid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contents" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fromSource" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fromUid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="loginUid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="messageId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="messageSendStatus" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="messageType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="toUid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unReadMessagesCount" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="DialogEntity" positionX="0" positionY="0" width="128" height="180"/>
+        <element name="RecentContactsEntity" positionX="54" positionY="108" width="128" height="238"/>
+    </elements>
+</model>

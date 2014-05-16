@@ -1,0 +1,128 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+typedef enum {
+    DBCenterType_plate_info,             //左侧模块
+    DBCenterType_material_user,           //素材信息用户关联表
+    DBCenterType_material_info,          //素材信息
+    DBCenterType_plate_class,            //VIP特权一级列表信息
+    DBCenterType_promissory_shops,        //VIP特权详细信息
+    DBCenterType_financial_products,     //理财产品表
+    DBCenterType_user_remark,            //移动端用户备注表
+    DBCenterType_user_info,                //移动端用户表--存放理财顾问与客户
+    DBCenterType_golden,                  //黄金（未用）
+    DBCenterType_credit,                 //信贷（未用）
+    DBCenterType_activity_info,              //银行活动信息表（未用)
+}DBCenterType;
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <CoreData/CoreData.h>
+    #import "UIImageView+WebCache.h"
+    #import "SBJson.h"
+    #import "LogUtil.h"
+    #import "App.h"
+    #import "LogUtil.h"
+    #import "UserInfoUtil.h"
+    #import "ASIHTTPRequest.h"
+    #import "KMacros.h"
+    #import "AnalyseResponseUtil.h"
+    #import "LogUtil.h"
+    #import "DialogUtil.h"
+    #import "Utility.h"
+    #import "UserManager.h"
+    #import "EMEChatConfManager.h"
+    #import "CommonUtils.h"
+    #import "EMEConstants.h"
+    #import "NIFLog.h"
+    #import "EMEConfigManager.h"
+    #import "UIView+Hints.h"
+    #import "EMEFactroyManger.h"
+    #import "EMEAlertView.h"
+    #import "EMELPFamily.h"
+    #import "EMELPGroup.h"
+    #import "EMELPDialogVC.h"
+
+
+#endif
+
+#define IS_IPHONE                                            UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone
+
+#define IS_IPOD                                              [[[UIDevice currentDevice] model] isEqualToString:@"iPod touch"]
+
+
+//判断设备是否4寸屏幕
+#define IS_IPHONE5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+
+
+#define IS_IPAD ([[UIDevice currentDevice] respondsToSelector:@selector(userInterfaceIdiom)] && [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
+
+
+//判断设备是否iOS7
+#define IOS7   ( [[[UIDevice currentDevice] systemVersion] compare:@"7.0"] != NSOrderedAscending )
+
+
+//图片接口地址
+#define EME_IMAGE_UPLOAD_URL_PRIFIX                          @""
+
+//图片相对路径
+#define EME_IMAGE_URL_PRIFIX                                 @""
+
+//图片绝对路径
+#define IMAGE_URL(imgurl)                                    [NSString stringWithFormat:@"%@%@",EME_IMAGE_URL_PRIFIX,imgurl]
+//系统设置
+#define EME_USER_AUTOLOGIN_USERDEFAULT_KEY                   @"EME_USER_AUTOLOGIN_USERDEFAULT_KEY"//是否自动登录
+
+#define EME_NEWMESSAGE_NOTIFICATION_USERDEFAULT_KEY          @"EME_NEWMESSAGE_NOTIFICATION_USERDEFAULT_KEY"//是否接收新消息通知   --- 注意默认开启，所以NO 表示开启
+#define EME_NEWMESSAGE_VOICE_USERDEFAULT_KEY                 @"EME_NEWMESSAGE_VOICE_USERDEFAULT_KEY"//是否有提示声音   --- 注意默认开启，所以NO 表示开启
+#define EME_NEWMESSAGE_SHAKE_USERDEFAULT_KEY                 @"EME_NEWMESSAGE_SHAKE_USERDEFAULT_KEY"//是否有震动     --- 注意默认开启，所以NO 表示开启
+
+#define EME_NEWMESSAGE_NEEDVALIDATE_USERDEFAULT_KEY          @"EME_NEWMESSAGE_NEEDVALIDATE_USERDEFAULT_KEY"//加好友需要验证
+//取window高度
+#define GETSCREENHEIGHT                                      ([[[UIDevice currentDevice] systemVersion] intValue]<7?([[UIScreen mainScreen] bounds].size.height-([UIApplication sharedApplication].statusBarHidden?0:20.0)):([[UIScreen mainScreen] bounds].size.height))
+
+
+#define EME_SYSTEMVERSION                                    [[[UIDevice currentDevice] systemVersion] intValue]
+
+//取颜色
+#define UIColorFromString(value) [[EMEConfigManager shareConfigManager] evColorForKey:value]
+//取字体大小
+#define UIFontFromString(value) [[EMEConfigManager shareConfigManager] evFontForKey:value]
+
+#define DDLogRedColor  @"255,0,0;"
+#define DDLogGrayColor @"125,125,125;"
+#define DDLogBlackColor @"0,0,0;"
+#define DDLogWhitColor @"255,255,255;"
+#define DDLogOrangeColor @"255,255,0;"
+#define DDLogBlueColor @"131,201,153;"
+//老方法 -- 准备弃用
+#define NIF_TRACE(fmt, ...)    _NIFLog(@"",fmt,DDLogWhitColor,DDLogBlackColor,##__VA_ARGS__)
+#define NIF_ALLINFO(fmt, ...)   _NIFLog(@"",fmt,DDLogWhitColor,DDLogBlackColor,##__VA_ARGS__)
+
+//新方法 -- 准备弃用
+#define NIF_INFO(fmt, ...)     _NIFLog(@"=========== INFO ===========",fmt,DDLogWhitColor,DDLogGrayColor,##__VA_ARGS__)
+#define NIF_WARN(fmt, ...)     _NIFLog(@"!!========= WARN =========!!",fmt,DDLogOrangeColor,DDLogBlackColor,##__VA_ARGS__)
+#define NIF_ERROR(fmt, ...)    _NIFLog(@"!!!======== ERROR =========!!!",fmt,DDLogRedColor,DDLogBlackColor,##__VA_ARGS__)
+#define NIF_DEBUG(fmt, ...)    _NIFLog(@"!========== DEBUG ==========!",fmt,DDLogGrayColor,DDLogWhitColor,##__VA_ARGS__)
+
+//颜色获取
+#define UIColorFromRGB(rgbValue)                             [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+#define UIColorWithAlphaFromRGB(rgbValue,alpha)              [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:alpha]
+//通知 -- 手势滑动是否展开侧边栏
+#define kNotifPanGestureEnabled @"panGestureEnabled" //可以滑动展开侧边栏
+#define kNotifNotpanGestureEnabled @"NotpanGestureEnabled" //滑动不能展开侧边栏
+
+//通知 -- 手势点击是否展开侧边栏
+#define kNotifOpenJDSide @"openJDSide"   //打开侧边栏
+#define kNotifCloseJDSide @"closeJDSide"   //关闭侧边栏
