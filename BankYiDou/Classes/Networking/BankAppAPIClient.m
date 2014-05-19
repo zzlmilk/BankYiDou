@@ -10,7 +10,7 @@
 
 @implementation BankAppAPIClient
 
-static NSString * const APIBaseURLString = @"http://117.79.93.103/data/ds";
+static NSString * const APIBaseURLString = @"http://117.79.93.103";
 
 
 

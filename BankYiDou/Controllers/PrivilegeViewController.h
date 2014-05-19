@@ -10,4 +10,5 @@
 
 @interface PrivilegeViewController : UITableViewController
 
+@property (nonatomic,strong)NSMutableArray *privileges;
 @end
