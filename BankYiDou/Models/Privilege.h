@@ -12,8 +12,10 @@
 
 @property (nonatomic,strong)NSString *title;
 @property (nonatomic,strong)NSString *time;
-@property (nonatomic,strong)UIImage  *privilegeImage;
+@property (nonatomic,strong)NSString  *privilegeImageUrl;
 
+
+- (instancetype)initWithAttributes:(NSDictionary *)attributes;
 
 + (NSURLSessionDataTask *)privilegePostsWithBlock:(void (^)(NSArray *privileges, NSError *error))block;
 

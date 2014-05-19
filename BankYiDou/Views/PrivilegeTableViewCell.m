@@ -8,6 +8,8 @@
 
 #import "PrivilegeTableViewCell.h"
 
+#import "UIImageView+AFNetworking.h"
+
 
 @implementation PrivilegeTableViewCell
 
@@ -25,7 +27,7 @@
     if (privilege) {
         self.titleLabel.text = privilege.title;
         self.timeLabel.text=privilege.time;
-        self.privilegeImageView.image = privilege.privilegeImage;
+        [self.privilegeImageView setImageWithURL:[NSURL URLWithString:privilege.privilegeImageUrl] placeholderImage:[UIImage imageNamed:@"icon-gear"]];
     }
     
 }
