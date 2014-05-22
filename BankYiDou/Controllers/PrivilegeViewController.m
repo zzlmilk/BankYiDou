@@ -7,8 +7,7 @@
 //
 
 #import "PrivilegeViewController.h"
-#import "PrivilegeTableViewCell.h"
-#import "Privilege.h"
+
 
 @interface PrivilegeViewController ()
 
@@ -30,15 +29,10 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    PrivilegeDataSource *privilegeDataSource= [[PrivilegeDataSource alloc]initWithTableView:self.privilegeTableView];
     
-    [Privilege privilegePostsWithBlock:^(NSArray *privileges, NSError *error) {
-        
-        if (privileges) {
-            _privileges = [NSMutableArray arrayWithArray:privileges];
-            [self.tableView reloadData];
-        }
-    }];
     
+    [privilegeDataSource loadPrivileges];
    
 }
 
@@ -49,23 +43,6 @@
 }
 
 
-#pragma mark --- PrivilegeTableView Delegate
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return _privileges.count;
-}
-
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *kCellID = @"PrivilegeTableViewCellID";
-    
-    PrivilegeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellID];
-    
-    Privilege *privilege = [_privileges objectAtIndex:indexPath.row ];
-    
-    cell.privilege = privilege;
-    
-	return cell;
-
-}
 
 
 /*

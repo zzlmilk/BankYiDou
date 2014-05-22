@@ -14,3 +14,7 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 #endif
+
+
+//debug 1开启 0关闭
+#define rexDugSet 0

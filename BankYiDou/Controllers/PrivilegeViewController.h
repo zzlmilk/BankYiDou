@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PrivilegeDataSource.h"
+#import "PullRefreshTableView.h"
 
-@interface PrivilegeViewController : UITableViewController
 
-@property (nonatomic,strong)NSMutableArray *privileges;
+@interface PrivilegeViewController : UITableViewController<PrivilegeDataSourceDelegate>
+
+@property(strong,nonatomic) IBOutlet PullRefreshTableView *privilegeTableView;
+
+
 @end

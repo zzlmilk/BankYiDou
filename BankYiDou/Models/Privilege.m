@@ -46,13 +46,12 @@
     
     
     return [[BankAppAPIClient sharedClient]POST:@"data/ds/mi/listMaterialInfo" parameters:dic success:^(NSURLSessionDataTask *task, id responseObject) {
-        NSLog(@"%@",responseObject);
         
         
         NSArray *ary = [responseObject objectForKey:@"info"];
         NSArray *aryData = [ary objectAtIndex:0];
        
-        
+                
         NSMutableArray *privileges = [NSMutableArray array];
         for (int i =0 ; i<aryData.count; i++) {
             Privilege *p = [[Privilege alloc]initWithAttributes:[aryData objectAtIndex:i]];
@@ -62,8 +61,7 @@
         block(privileges,nil);
         
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
-        NSLog(@"%@",error);
-       
+            NSLog(@"%@",error);       
     }];
 }
 
@@ -74,14 +72,12 @@
     NSString *strValue = @"";
     //发布时间
     long long value1 = num/1000;
-    NSLog(@"value1...%lld",value1);
     //取当前日期
     NSDate *date = [NSDate date];
     NSTimeInterval time = [date timeIntervalSince1970];
     long long value2 = [[NSNumber numberWithDouble:time]longLongValue];
     
     long long value = value2 - value1;
-    NSLog(@"value...%lld",value);
     if (value <= 0) {
         strValue = @"刚    刚";
     }else if (value < 60){
@@ -94,15 +90,12 @@
         strValue = [NSString stringWithFormat:@"%lld天前",value/(60*60*24)];
     }
     else{
-        NSLog(@"年月日");
         strValue = @"11";
         NSDate *d = [[NSDate alloc]initWithTimeIntervalSince1970:value1];
-        NSLog(@"%@",d);
         NSDateFormatter *dateformatter = [[NSDateFormatter alloc]init];
         [dateformatter setDateFormat:@"MM-dd"];
         strValue = [dateformatter stringFromDate:d];
     }
-    NSLog(@"strValue...%@",strValue);
     return strValue;
 }
 @end
