@@ -23,6 +23,10 @@
 		0434947C1929E77C0003F137 /* PrivilegeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434947B1929E77C0003F137 /* PrivilegeTableViewCell.m */; };
 		0434947F1929EC2C0003F137 /* Privilege.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434947E1929EC2C0003F137 /* Privilege.m */; };
 		044FD658192DFBB200901AB3 /* EGORefreshTableFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 044FD657192DFBB200901AB3 /* EGORefreshTableFootView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		044FD65F192EE96100901AB3 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 044FD65E192EE96100901AB3 /* User.m */; };
+		044FD662192EED3F00901AB3 /* ResultData.m in Sources */ = {isa = PBXBuildFile; fileRef = 044FD661192EED3F00901AB3 /* ResultData.m */; };
+		044FD665192EF60100901AB3 /* Error.m in Sources */ = {isa = PBXBuildFile; fileRef = 044FD664192EF60100901AB3 /* Error.m */; };
+		044FD669192EF78F00901AB3 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 044FD668192EF78F00901AB3 /* MBProgressHUD.m */; };
 		04D236D61923152C00C6A547 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D236D51923152C00C6A547 /* Foundation.framework */; };
 		04D236D81923152C00C6A547 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D236D71923152C00C6A547 /* CoreGraphics.framework */; };
 		04D236DA1923152C00C6A547 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D236D91923152C00C6A547 /* UIKit.framework */; };
@@ -94,6 +98,14 @@
 		0434947E1929EC2C0003F137 /* Privilege.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Privilege.m; sourceTree = "<group>"; };
 		044FD656192DFBB200901AB3 /* EGORefreshTableFootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableFootView.h; sourceTree = "<group>"; };
 		044FD657192DFBB200901AB3 /* EGORefreshTableFootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableFootView.m; sourceTree = "<group>"; };
+		044FD65D192EE96100901AB3 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		044FD65E192EE96100901AB3 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		044FD660192EED3F00901AB3 /* ResultData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultData.h; sourceTree = "<group>"; };
+		044FD661192EED3F00901AB3 /* ResultData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultData.m; sourceTree = "<group>"; };
+		044FD663192EF60100901AB3 /* Error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Error.h; sourceTree = "<group>"; };
+		044FD664192EF60100901AB3 /* Error.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Error.m; sourceTree = "<group>"; };
+		044FD667192EF78F00901AB3 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		044FD668192EF78F00901AB3 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		04D236D21923152C00C6A547 /* BankYiDou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankYiDou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D236D51923152C00C6A547 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		04D236D71923152C00C6A547 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -253,6 +265,15 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
+		044FD666192EF78F00901AB3 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				044FD667192EF78F00901AB3 /* MBProgressHUD.h */,
+				044FD668192EF78F00901AB3 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		04D236C91923152C00C6A547 = {
 			isa = PBXGroup;
 			children = (
@@ -356,6 +377,12 @@
 			children = (
 				0434947D1929EC2C0003F137 /* Privilege.h */,
 				0434947E1929EC2C0003F137 /* Privilege.m */,
+				044FD65D192EE96100901AB3 /* User.h */,
+				044FD65E192EE96100901AB3 /* User.m */,
+				044FD660192EED3F00901AB3 /* ResultData.h */,
+				044FD661192EED3F00901AB3 /* ResultData.m */,
+				044FD663192EF60100901AB3 /* Error.h */,
+				044FD664192EF60100901AB3 /* Error.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -363,6 +390,7 @@
 		04D237071923159000C6A547 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				044FD666192EF78F00901AB3 /* MBProgressHUD */,
 				0423C320192B002C00B37931 /* EGOTableViewPullRefresh */,
 				04F039D7192616C0006BE202 /* UIKit+AFNetworking */,
 				04F039BA192616AB006BE202 /* AFNetworking */,
@@ -579,17 +607,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				044FD662192EED3F00901AB3 /* ResultData.m in Sources */,
 				04F039D3192616AB006BE202 /* AFURLConnectionOperation.m in Sources */,
 				04F039CE192616AB006BE202 /* AFHTTPRequestOperation.m in Sources */,
 				04F039EC192616C0006BE202 /* UIButton+AFNetworking.m in Sources */,
 				0434947F1929EC2C0003F137 /* Privilege.m in Sources */,
 				04F039D1192616AB006BE202 /* AFNetworkReachabilityManager.m in Sources */,
 				04F039EE192616C0006BE202 /* UIProgressView+AFNetworking.m in Sources */,
+				044FD669192EF78F00901AB3 /* MBProgressHUD.m in Sources */,
 				0434947C1929E77C0003F137 /* PrivilegeTableViewCell.m in Sources */,
 				04F039D6192616AB006BE202 /* AFURLSessionManager.m in Sources */,
 				0423C33C192B056500B37931 /* PullRefreshTableView.m in Sources */,
 				04F039D4192616AB006BE202 /* AFURLRequestSerialization.m in Sources */,
 				04D236E61923152C00C6A547 /* AppDelegate.m in Sources */,
+				044FD65F192EE96100901AB3 /* User.m in Sources */,
 				04F039EF192616C0006BE202 /* UIRefreshControl+AFNetworking.m in Sources */,
 				04F039D5192616AB006BE202 /* AFURLResponseSerialization.m in Sources */,
 				04D236E21923152C00C6A547 /* main.m in Sources */,
@@ -607,6 +638,7 @@
 				04F039D0192616AB006BE202 /* AFHTTPSessionManager.m in Sources */,
 				04F039EA192616C0006BE202 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				0423C32C192B002C00B37931 /* EGORefreshTableHeaderView.m in Sources */,
+				044FD665192EF60100901AB3 /* Error.m in Sources */,
 				04F039E9192616C0006BE202 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				044FD658192DFBB200901AB3 /* EGORefreshTableFootView.m in Sources */,
 			);

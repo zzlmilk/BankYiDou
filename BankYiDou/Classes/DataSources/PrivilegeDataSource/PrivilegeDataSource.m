@@ -9,6 +9,7 @@
 #import "PrivilegeDataSource.h"
 #import "Privilege.h"
 #import "PrivilegeTableViewCell.h"
+#import "MBProgressHUD.h"
 
 @implementation PrivilegeDataSource
 
@@ -37,7 +38,7 @@
     
     NSMutableDictionary *dic = [NSMutableDictionary dictionary];
     [dic setObject:@"75" forKey:@"uid"];
-    [dic setObject:@"Z6F484C8s4w095G7p1U5Z1n5v0U4u190t2i3A7wgiXs7l2VQA6EgynZ0G0oAw0Ei" forKey:@"token"];
+    [dic setObject:@"j5P6X6h1Q2a1o0A2T1Z3A215L0h411c0n2nrCRNEutvmuc9VHA9N65RAMQGAWIdP" forKey:@"token"];
     
     
     [Privilege privilegePostsParameters:dic WithBlock:^(NSArray *privileges, NSError *error) {
@@ -45,8 +46,10 @@
             _privileges = [NSMutableArray arrayWithArray:privileges];
             [self.tableView reloadData];
         }
+       
     }];
 }
+
 
 
 

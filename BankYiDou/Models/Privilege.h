@@ -7,8 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ResultData.h"
 
 @interface Privilege : NSObject
+
 
 @property (nonatomic,strong)NSString *title;
 @property (nonatomic,strong)NSString *time;

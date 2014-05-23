@@ -17,9 +17,10 @@
         return nil;
     }
     
+    
   
     self.title = [attributes objectForKey:@"title"];
-    
+
     long long verifyTimeLong = [[attributes objectForKey:@"verifyTime"]longLongValue];
     NSString *verifyTime = [self changeTime:verifyTimeLong];
     self.time =verifyTime;

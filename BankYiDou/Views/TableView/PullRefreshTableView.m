@@ -24,8 +24,6 @@
 }
 
 
-
-
 #pragma Private
 -(void)setUpRefreshHeaderView{
     _refreshHeaderView = [[EGORefreshTableHeaderView alloc] initWithFrame:CGRectMake(0.0f, 0.0f -self.bounds.size.height, self.frame.size.width, self.bounds.size.height)];

@@ -10,10 +10,11 @@
 #import "PrivilegeDataSource.h"
 #import "PullRefreshTableView.h"
 
-
+@class PullRefreshTableViewDataSource;
 @interface PrivilegeViewController : UITableViewController
 {
     PrivilegeDataSource *privilegeDataSource;
+    PullRefreshTableViewDataSource * dataSource;
 }
 
 

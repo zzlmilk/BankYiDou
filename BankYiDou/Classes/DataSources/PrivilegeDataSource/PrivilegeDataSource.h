@@ -23,6 +23,7 @@
     CGPoint lastOffset;
 }
 
+
 @property (nonatomic, unsafe_unretained) id<PrivilegeDataSourceDelegate> privilegeDataSourceDelegate;
 
 @property(nonatomic,strong) NSMutableArray *privileges;
