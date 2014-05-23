@@ -78,6 +78,8 @@
 	[keyValuePair setValue:key forKey:@"key"];
 	[keyValuePair setValue:[value description] forKey:@"value"];
 	[[self postData] addObject:keyValuePair];
+    
+    NSLog(@"%@",[self postData]);
 }
 
 - (void)setPostValue:(id <NSObject>)value forKey:(NSString *)key

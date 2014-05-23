@@ -22,7 +22,9 @@
         _tableView = aTableView;
         _tableView.delegate=self;
         _tableView.dataSource=self;
+         [_tableView setUpRefreshHeaderView];
         _tableView.refreshHeaderView.delegate=self;
+        
 
     }
     
@@ -35,14 +37,16 @@
         _tableView = aTableView;
         _tableView.dataSource=self;
         _tableView.delegate =self;
-        _tableView.refreshHeaderView.delegate=self;
+        [_tableView setUpRefreshHeaderView];
+        _tableView.refreshHeaderView.delegate=self;        
         [_tableView reloadData];
+
 	}
 }
 
 
 
--(void)loadRecentPins{
+-(void)loadPrivileges{
     
 }
 
@@ -50,11 +54,11 @@
 
 }
 
-/*
+
 #pragma mark Data Source Loading / Reloading Methods
 - (void)reloadTableViewDataSource{
     _reloading = YES;
-    [self loadRecentPins];
+    [self loadPrivileges];
 }
 
 
@@ -64,6 +68,7 @@
 	[_tableView.refreshHeaderView egoRefreshScrollViewDataSourceDidFinishedLoading:_tableView];
 	
 }
+
 
 
 
@@ -93,23 +98,15 @@
     [_tableView.refreshHeaderView egoRefreshScrollViewDidEndDragging:scrollView];
 }
 
-
-
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
     
-    if( scrollView.contentOffset.y >= abs(scrollView.contentSize.height - scrollView.frame.size.height)){
-            [self loadMore];
-    }
-    else{
-            [_tableView.refreshHeaderView egoRefreshScrollViewDidEndDragging:scrollView];        
-    }
+    [_tableView.refreshHeaderView egoRefreshScrollViewDidEndDragging:scrollView];
+    
 }
 
 
 #pragma mark - TableViewDelegate 
--(CGFloat )tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 1;
-}
+
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     // Return the number of sections.
@@ -128,7 +125,7 @@
 }
 
 
-*/
+
 
 
 @end

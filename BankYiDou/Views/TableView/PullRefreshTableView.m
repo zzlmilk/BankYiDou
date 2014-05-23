@@ -17,20 +17,22 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-       // [self setUpRefreshHeaderView];
+        [self setUpRefreshHeaderView];
 
     }
     return self;
 }
 
 
+
+
 #pragma Private
--(void)setUpRefreshHeaderView{    
+-(void)setUpRefreshHeaderView{
     _refreshHeaderView = [[EGORefreshTableHeaderView alloc] initWithFrame:CGRectMake(0.0f, 0.0f -self.bounds.size.height, self.frame.size.width, self.bounds.size.height)];
     [self addSubview:_refreshHeaderView];
-    
-    
 }
+
+
 
 /*
 // Only override drawRect: if you perform custom drawing.

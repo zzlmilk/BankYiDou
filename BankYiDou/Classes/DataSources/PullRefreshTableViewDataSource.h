@@ -24,8 +24,11 @@
 @property (nonatomic) BOOL reloading;
 @property (nonatomic,strong) PullRefreshTableView *tableView;
 
-
 -(void)reloadTableViewDataSource;
+-(void)loadPrivileges;
+-(void)loadMore;
+
+
 -(id)initWithTableView:(PullRefreshTableView *)aTableView;
 
 @end

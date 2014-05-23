@@ -12,7 +12,8 @@
 
 @interface PullRefreshTableView : UITableView<UIScrollViewDelegate>
 {
-    EGORefreshTableHeaderView *_refreshHeaderView;
+
+    
 }
 
 

@@ -34,24 +34,14 @@
 
 
 
-+(NSURLSessionDataTask *)privilegePostsWithBlock:(void (^)(NSArray *, NSError *))block{
-    
-    NSMutableDictionary *dic = [NSMutableDictionary dictionary];
-    // [dic setObject:@"pageSize" forKey:@"9"];
-    
-    
-        [dic setObject:@"75" forKey:@"uid"];
-        [dic setObject:@"Z6F484C8s4w095G7p1U5Z1n5v0U4u190t2i3A7wgiXs7l2VQA6EgynZ0G0oAw0Ei" forKey:@"token"];
-    
-    
-    
-    return [[BankAppAPIClient sharedClient]POST:@"data/ds/mi/listMaterialInfo" parameters:dic success:^(NSURLSessionDataTask *task, id responseObject) {
++(NSURLSessionDataTask *)privilegePostsParameters:(NSMutableDictionary *)parameters WithBlock:(void (^)(NSArray *, NSError *))block{
+    return [[BankAppAPIClient sharedClient]POST:@"data/ds/mi/listMaterialInfo" parameters:parameters success:^(NSURLSessionDataTask *task, id responseObject) {
         
         
         NSArray *ary = [responseObject objectForKey:@"info"];
         NSArray *aryData = [ary objectAtIndex:0];
-       
-                
+        
+        
         NSMutableArray *privileges = [NSMutableArray array];
         for (int i =0 ; i<aryData.count; i++) {
             Privilege *p = [[Privilege alloc]initWithAttributes:[aryData objectAtIndex:i]];
@@ -61,9 +51,12 @@
         block(privileges,nil);
         
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
-            NSLog(@"%@",error);       
+        NSLog(@"%@",error);
     }];
+
 }
+
+
 
 
 #pragma mark -- Private

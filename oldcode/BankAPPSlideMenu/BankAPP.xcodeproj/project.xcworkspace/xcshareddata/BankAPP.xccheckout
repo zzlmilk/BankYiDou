@@ -5,43 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>A14BCE9A-89DB-406C-BA65-1E9E952F0DBB</string>
+	<string>293E2F6B-858F-4934-BD4E-F77FA4474CD5</string>
 	<key>IDESourceControlProjectName</key>
 	<string>BankAPP</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>B8C8EB62-46A6-450E-92AF-52D8AAB12E9C</key>
-		<string>svn://172.16.204.228</string>
+		<key>52FEC942-CA0E-4AD9-B0F5-7A8735C2CCBB</key>
+		<string>https://github.com/zzlmilk/BankYiDou.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>project/BankAPPSlideMenu/BankAPP.xcodeproj/project.xcworkspace</string>
+	<string>oldcode/BankAPPSlideMenu/BankAPP.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>B8C8EB62-46A6-450E-92AF-52D8AAB12E9C</key>
-		<string>../../../../../../../..</string>
-		<key>DF220932-4B24-4E7C-9B46-B2C9E7864BAF</key>
-		<string>../../../../../../../../../bankvip/bankvip</string>
-	</dict>
-	<key>IDESourceControlProjectRepositoryRootDictionary</key>
-	<dict>
-		<key>B8C8EB62-46A6-450E-92AF-52D8AAB12E9C</key>
-		<string>svn://172.16.204.228</string>
+		<key>52FEC942-CA0E-4AD9-B0F5-7A8735C2CCBB</key>
+		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>svn://172.16.204.228/eduo/dev/app/ios/project/BankAPPSlideMenu/BankAPP.xcodeproj</string>
+	<string>https://github.com/zzlmilk/BankYiDou.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>B8C8EB62-46A6-450E-92AF-52D8AAB12E9C</string>
+	<string>52FEC942-CA0E-4AD9-B0F5-7A8735C2CCBB</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.subversion</string>
+			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>B8C8EB62-46A6-450E-92AF-52D8AAB12E9C</string>
+			<string>52FEC942-CA0E-4AD9-B0F5-7A8735C2CCBB</string>
 			<key>IDESourceControlWCCName</key>
-			<string>SVN</string>
+			<string>BankYiDou</string>
 		</dict>
 	</array>
 </dict>

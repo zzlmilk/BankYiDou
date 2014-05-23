@@ -17,6 +17,9 @@
 
 - (instancetype)initWithAttributes:(NSDictionary *)attributes;
 
-+ (NSURLSessionDataTask *)privilegePostsWithBlock:(void (^)(NSArray *privileges, NSError *error))block;
+
+
++ (NSURLSessionDataTask *)privilegePostsParameters:(NSMutableDictionary *)parameters WithBlock:(void (^)(NSArray *privileges, NSError *error))block;
+
 
 @end

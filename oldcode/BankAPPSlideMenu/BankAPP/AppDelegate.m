@@ -189,6 +189,7 @@
 - (void)openLoadingViewController:(NSString *)token
 {
     LoadingViewController*  loadingVC = [[LoadingViewController alloc] initWithNibName:@"LoadingViewController" bundle:nil];
+    
     loadingVC.token = token;
     self.window.rootViewController = loadingVC;
 //    [self.window makeKeyAndVisible];

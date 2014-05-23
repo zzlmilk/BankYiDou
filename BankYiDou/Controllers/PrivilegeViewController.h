@@ -11,9 +11,15 @@
 #import "PullRefreshTableView.h"
 
 
-@interface PrivilegeViewController : UITableViewController<PrivilegeDataSourceDelegate>
+@interface PrivilegeViewController : UITableViewController
+{
+    PrivilegeDataSource *privilegeDataSource;
+}
+
 
 @property(strong,nonatomic) IBOutlet PullRefreshTableView *privilegeTableView;
+
+
 
 
 @end

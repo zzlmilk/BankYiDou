@@ -25,15 +25,21 @@
 }
 
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    PrivilegeDataSource *privilegeDataSource= [[PrivilegeDataSource alloc]initWithTableView:self.privilegeTableView];
+     privilegeDataSource= [[PrivilegeDataSource alloc]initWithTableView:self.privilegeTableView];
+    //[privilegeDataSource loadPrivileges];
     
     
-    [privilegeDataSource loadPrivileges];
-   
+    
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    self.tabBarController.tabBar.translucent = NO;
+
+
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -41,6 +47,9 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+
 
 
 

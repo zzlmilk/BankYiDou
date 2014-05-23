@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0423C32C192B002C00B37931 /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0423C322192B002C00B37931 /* EGORefreshTableHeaderView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0423C32D192B002C00B37931 /* blackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 0423C324192B002C00B37931 /* blackArrow.png */; };
+		0423C32E192B002C00B37931 /* blackArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0423C325192B002C00B37931 /* blackArrow@2x.png */; };
+		0423C32F192B002C00B37931 /* blueArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 0423C326192B002C00B37931 /* blueArrow.png */; };
+		0423C330192B002C00B37931 /* blueArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0423C327192B002C00B37931 /* blueArrow@2x.png */; };
+		0423C331192B002C00B37931 /* grayArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 0423C328192B002C00B37931 /* grayArrow.png */; };
+		0423C332192B002C00B37931 /* grayArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0423C329192B002C00B37931 /* grayArrow@2x.png */; };
+		0423C333192B002C00B37931 /* whiteArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 0423C32A192B002C00B37931 /* whiteArrow.png */; };
+		0423C334192B002C00B37931 /* whiteArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0423C32B192B002C00B37931 /* whiteArrow@2x.png */; };
+		0423C338192B049B00B37931 /* PullRefreshTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0423C337192B049B00B37931 /* PullRefreshTableViewDataSource.m */; };
+		0423C33C192B056500B37931 /* PullRefreshTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0423C33B192B056500B37931 /* PullRefreshTableView.m */; };
+		0423C340192B079000B37931 /* PrivilegeDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0423C33F192B079000B37931 /* PrivilegeDataSource.m */; };
+		0423C342192B199800B37931 /* icon-gear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0423C341192B199800B37931 /* icon-gear@2x.png */; };
+		0434947C1929E77C0003F137 /* PrivilegeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434947B1929E77C0003F137 /* PrivilegeTableViewCell.m */; };
+		0434947F1929EC2C0003F137 /* Privilege.m in Sources */ = {isa = PBXBuildFile; fileRef = 0434947E1929EC2C0003F137 /* Privilege.m */; };
+		044FD658192DFBB200901AB3 /* EGORefreshTableFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 044FD657192DFBB200901AB3 /* EGORefreshTableFootView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		04D236D61923152C00C6A547 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D236D51923152C00C6A547 /* Foundation.framework */; };
 		04D236D81923152C00C6A547 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D236D71923152C00C6A547 /* CoreGraphics.framework */; };
 		04D236DA1923152C00C6A547 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D236D91923152C00C6A547 /* UIKit.framework */; };
@@ -55,6 +71,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0423C321192B002C00B37931 /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
+		0423C322192B002C00B37931 /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
+		0423C324192B002C00B37931 /* blackArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackArrow.png; sourceTree = "<group>"; };
+		0423C325192B002C00B37931 /* blackArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackArrow@2x.png"; sourceTree = "<group>"; };
+		0423C326192B002C00B37931 /* blueArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueArrow.png; sourceTree = "<group>"; };
+		0423C327192B002C00B37931 /* blueArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blueArrow@2x.png"; sourceTree = "<group>"; };
+		0423C328192B002C00B37931 /* grayArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grayArrow.png; sourceTree = "<group>"; };
+		0423C329192B002C00B37931 /* grayArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grayArrow@2x.png"; sourceTree = "<group>"; };
+		0423C32A192B002C00B37931 /* whiteArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteArrow.png; sourceTree = "<group>"; };
+		0423C32B192B002C00B37931 /* whiteArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteArrow@2x.png"; sourceTree = "<group>"; };
+		0423C336192B049B00B37931 /* PullRefreshTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullRefreshTableViewDataSource.h; sourceTree = "<group>"; };
+		0423C337192B049B00B37931 /* PullRefreshTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullRefreshTableViewDataSource.m; sourceTree = "<group>"; };
+		0423C33A192B056500B37931 /* PullRefreshTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullRefreshTableView.h; sourceTree = "<group>"; };
+		0423C33B192B056500B37931 /* PullRefreshTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullRefreshTableView.m; sourceTree = "<group>"; };
+		0423C33E192B079000B37931 /* PrivilegeDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivilegeDataSource.h; sourceTree = "<group>"; };
+		0423C33F192B079000B37931 /* PrivilegeDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrivilegeDataSource.m; sourceTree = "<group>"; };
+		0423C341192B199800B37931 /* icon-gear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-gear@2x.png"; sourceTree = "<group>"; };
+		0434947A1929E77C0003F137 /* PrivilegeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivilegeTableViewCell.h; sourceTree = "<group>"; };
+		0434947B1929E77C0003F137 /* PrivilegeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrivilegeTableViewCell.m; sourceTree = "<group>"; };
+		0434947D1929EC2C0003F137 /* Privilege.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Privilege.h; sourceTree = "<group>"; };
+		0434947E1929EC2C0003F137 /* Privilege.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Privilege.m; sourceTree = "<group>"; };
+		044FD656192DFBB200901AB3 /* EGORefreshTableFootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableFootView.h; sourceTree = "<group>"; };
+		044FD657192DFBB200901AB3 /* EGORefreshTableFootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableFootView.m; sourceTree = "<group>"; };
 		04D236D21923152C00C6A547 /* BankYiDou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankYiDou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D236D51923152C00C6A547 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		04D236D71923152C00C6A547 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -143,6 +182,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0423C31F192AEF1D00B37931 /* PlaceholderImage */ = {
+			isa = PBXGroup;
+			children = (
+				0423C341192B199800B37931 /* icon-gear@2x.png */,
+			);
+			path = PlaceholderImage;
+			sourceTree = "<group>";
+		};
+		0423C320192B002C00B37931 /* EGOTableViewPullRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				044FD656192DFBB200901AB3 /* EGORefreshTableFootView.h */,
+				044FD657192DFBB200901AB3 /* EGORefreshTableFootView.m */,
+				0423C321192B002C00B37931 /* EGORefreshTableHeaderView.h */,
+				0423C322192B002C00B37931 /* EGORefreshTableHeaderView.m */,
+				0423C323192B002C00B37931 /* Resources */,
+			);
+			path = EGOTableViewPullRefresh;
+			sourceTree = "<group>";
+		};
+		0423C323192B002C00B37931 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0423C324192B002C00B37931 /* blackArrow.png */,
+				0423C325192B002C00B37931 /* blackArrow@2x.png */,
+				0423C326192B002C00B37931 /* blueArrow.png */,
+				0423C327192B002C00B37931 /* blueArrow@2x.png */,
+				0423C328192B002C00B37931 /* grayArrow.png */,
+				0423C329192B002C00B37931 /* grayArrow@2x.png */,
+				0423C32A192B002C00B37931 /* whiteArrow.png */,
+				0423C32B192B002C00B37931 /* whiteArrow@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0423C335192B049000B37931 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				0423C33D192B076600B37931 /* PrivilegeDataSource */,
+				0423C336192B049B00B37931 /* PullRefreshTableViewDataSource.h */,
+				0423C337192B049B00B37931 /* PullRefreshTableViewDataSource.m */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		0423C339192B053C00B37931 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				0423C33A192B056500B37931 /* PullRefreshTableView.h */,
+				0423C33B192B056500B37931 /* PullRefreshTableView.m */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		0423C33D192B076600B37931 /* PrivilegeDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				0423C33E192B079000B37931 /* PrivilegeDataSource.h */,
+				0423C33F192B079000B37931 /* PrivilegeDataSource.m */,
+			);
+			path = PrivilegeDataSource;
+			sourceTree = "<group>";
+		};
+		04349480192A04F40003F137 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				0423C31F192AEF1D00B37931 /* PlaceholderImage */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		04D236C91923152C00C6A547 = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +286,7 @@
 		04D236DB1923152C00C6A547 /* BankYiDou */ = {
 			isa = PBXGroup;
 			children = (
+				04349480192A04F40003F137 /* Images */,
 				04F039F7192618D5006BE202 /* docs */,
 				04F039F1192616F0006BE202 /* Classes */,
 				04D237071923159000C6A547 /* ThirdParty */,
@@ -233,6 +344,9 @@
 		04D237051923156500C6A547 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0423C339192B053C00B37931 /* TableView */,
+				0434947A1929E77C0003F137 /* PrivilegeTableViewCell.h */,
+				0434947B1929E77C0003F137 /* PrivilegeTableViewCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -240,6 +354,8 @@
 		04D237061923157E00C6A547 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0434947D1929EC2C0003F137 /* Privilege.h */,
+				0434947E1929EC2C0003F137 /* Privilege.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -247,6 +363,7 @@
 		04D237071923159000C6A547 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				0423C320192B002C00B37931 /* EGOTableViewPullRefresh */,
 				04F039D7192616C0006BE202 /* UIKit+AFNetworking */,
 				04F039BA192616AB006BE202 /* AFNetworking */,
 			);
@@ -333,6 +450,7 @@
 		04F039F1192616F0006BE202 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				0423C335192B049000B37931 /* DataSources */,
 				04F039F319261722006BE202 /* Networking */,
 			);
 			path = Classes;
@@ -431,7 +549,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				04F039F9192618D5006BE202 /* Eduo后台接口说明文档.docx in Resources */,
+				0423C333192B002C00B37931 /* whiteArrow.png in Resources */,
+				0423C32E192B002C00B37931 /* blackArrow@2x.png in Resources */,
+				0423C334192B002C00B37931 /* whiteArrow@2x.png in Resources */,
+				0423C331192B002C00B37931 /* grayArrow.png in Resources */,
+				0423C342192B199800B37931 /* icon-gear@2x.png in Resources */,
+				0423C32D192B002C00B37931 /* blackArrow.png in Resources */,
+				0423C332192B002C00B37931 /* grayArrow@2x.png in Resources */,
+				0423C32F192B002C00B37931 /* blueArrow.png in Resources */,
 				04D2370E19233F2400C6A547 /* Main.storyboard in Resources */,
+				0423C330192B002C00B37931 /* blueArrow@2x.png in Resources */,
 				04D236E01923152C00C6A547 /* InfoPlist.strings in Resources */,
 				04D236E81923152C00C6A547 /* Images.xcassets in Resources */,
 			);
@@ -455,9 +582,12 @@
 				04F039D3192616AB006BE202 /* AFURLConnectionOperation.m in Sources */,
 				04F039CE192616AB006BE202 /* AFHTTPRequestOperation.m in Sources */,
 				04F039EC192616C0006BE202 /* UIButton+AFNetworking.m in Sources */,
+				0434947F1929EC2C0003F137 /* Privilege.m in Sources */,
 				04F039D1192616AB006BE202 /* AFNetworkReachabilityManager.m in Sources */,
 				04F039EE192616C0006BE202 /* UIProgressView+AFNetworking.m in Sources */,
+				0434947C1929E77C0003F137 /* PrivilegeTableViewCell.m in Sources */,
 				04F039D6192616AB006BE202 /* AFURLSessionManager.m in Sources */,
+				0423C33C192B056500B37931 /* PullRefreshTableView.m in Sources */,
 				04F039D4192616AB006BE202 /* AFURLRequestSerialization.m in Sources */,
 				04D236E61923152C00C6A547 /* AppDelegate.m in Sources */,
 				04F039EF192616C0006BE202 /* UIRefreshControl+AFNetworking.m in Sources */,
@@ -467,6 +597,8 @@
 				04F039B519261091006BE202 /* CustomerTabBarViewController.m in Sources */,
 				04F039EB192616C0006BE202 /* UIAlertView+AFNetworking.m in Sources */,
 				04F039CF192616AB006BE202 /* AFHTTPRequestOperationManager.m in Sources */,
+				0423C338192B049B00B37931 /* PullRefreshTableViewDataSource.m in Sources */,
+				0423C340192B079000B37931 /* PrivilegeDataSource.m in Sources */,
 				04F039F619261742006BE202 /* BankAppAPIClient.m in Sources */,
 				04F039D2192616AB006BE202 /* AFSecurityPolicy.m in Sources */,
 				04F039F0192616C0006BE202 /* UIWebView+AFNetworking.m in Sources */,
@@ -474,7 +606,9 @@
 				04F039B81926116F006BE202 /* PrivilegeViewController.m in Sources */,
 				04F039D0192616AB006BE202 /* AFHTTPSessionManager.m in Sources */,
 				04F039EA192616C0006BE202 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				0423C32C192B002C00B37931 /* EGORefreshTableHeaderView.m in Sources */,
 				04F039E9192616C0006BE202 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				044FD658192DFBB200901AB3 /* EGORefreshTableFootView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

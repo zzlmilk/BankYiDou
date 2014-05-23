@@ -28,8 +28,7 @@
 @property(nonatomic,strong) NSMutableArray *privileges;
 @property(strong,nonatomic) NSMutableDictionary *parameters;
 
-
-
 -(void)loadPrivileges;
+
 
 @end
