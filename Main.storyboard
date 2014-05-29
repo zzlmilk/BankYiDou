@@ -49,7 +49,13 @@
                         </prototypes>
                         <sections/>
                     </tableView>
-                    <navigationItem key="navigationItem" id="2Nn-uU-r8e"/>
+                    <navigationItem key="navigationItem" id="2Nn-uU-r8e">
+                        <barButtonItem key="leftBarButtonItem" title="Left" id="2o2-Rh-T6e">
+                            <connections>
+                                <action selector="presentLeftMenuViewController:" destination="5bK-nJ-R58" id="6r0-Qy-ZuV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="privilegeTableView" destination="DYs-T4-KSR" id="FJl-GP-iFQ"/>
                     </connections>

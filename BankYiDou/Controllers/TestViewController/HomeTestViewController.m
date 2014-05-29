@@ -24,7 +24,7 @@
 
 -(void)viewDidLoad{
     [super viewDidLoad];
-    [self presentLeftMenuViewController];
+   // [self presentLeftMenuViewController];
 }
 
 

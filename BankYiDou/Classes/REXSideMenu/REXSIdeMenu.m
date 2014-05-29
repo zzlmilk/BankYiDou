@@ -15,6 +15,8 @@
 @property (strong, readwrite, nonatomic) UIView *menuViewContainer;
 @property (strong, readwrite, nonatomic) UIView *contentViewContainer;
 
+@property (strong, readwrite, nonatomic) UIButton *contentButton;
+
 
 
 -(void)_commonInit;
@@ -86,7 +88,7 @@
 
 -(void)hideMenuViewController
 {
-    
+     [self __hideMenuViewControllerAnimated:YES];
 }
 
 
@@ -151,6 +153,24 @@
     
 }
 
+
+- (void)__hideMenuViewControllerAnimated:(BOOL)animated
+{
+    
+}
+
+
+
+- (void)__addContentButton
+{
+    if (self.contentButton.superview)
+        return;
+    
+    self.contentButton.autoresizingMask = UIViewAutoresizingNone;
+    self.contentButton.frame = self.contentViewContainer.bounds;
+    self.contentButton.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    [self.contentViewContainer addSubview:self.contentButton];
+}
 
 
 

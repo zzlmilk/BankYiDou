@@ -29,6 +29,7 @@
 		044FD669192EF78F00901AB3 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 044FD668192EF78F00901AB3 /* MBProgressHUD.m */; };
 		044FD6B0192F49F800901AB3 /* REXSIdeMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 044FD6AF192F49F800901AB3 /* REXSIdeMenu.m */; };
 		0460B9AF1937087600B6DE04 /* HomeTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B9AE1937087600B6DE04 /* HomeTestViewController.m */; };
+		0460B9B21937201100B6DE04 /* UIViewController+REXSideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B9B11937201100B6DE04 /* UIViewController+REXSideMenu.m */; };
 		04D236D61923152C00C6A547 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D236D51923152C00C6A547 /* Foundation.framework */; };
 		04D236D81923152C00C6A547 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D236D71923152C00C6A547 /* CoreGraphics.framework */; };
 		04D236DA1923152C00C6A547 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D236D91923152C00C6A547 /* UIKit.framework */; };
@@ -112,6 +113,8 @@
 		044FD6AF192F49F800901AB3 /* REXSIdeMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REXSIdeMenu.m; sourceTree = "<group>"; };
 		0460B9AD1937087600B6DE04 /* HomeTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTestViewController.h; sourceTree = "<group>"; };
 		0460B9AE1937087600B6DE04 /* HomeTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTestViewController.m; sourceTree = "<group>"; };
+		0460B9B01937201100B6DE04 /* UIViewController+REXSideMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+REXSideMenu.h"; sourceTree = "<group>"; };
+		0460B9B11937201100B6DE04 /* UIViewController+REXSideMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+REXSideMenu.m"; sourceTree = "<group>"; };
 		04D236D21923152C00C6A547 /* BankYiDou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankYiDou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D236D51923152C00C6A547 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		04D236D71923152C00C6A547 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -285,6 +288,8 @@
 			children = (
 				044FD6AE192F49F800901AB3 /* REXSIdeMenu.h */,
 				044FD6AF192F49F800901AB3 /* REXSIdeMenu.m */,
+				0460B9B01937201100B6DE04 /* UIViewController+REXSideMenu.h */,
+				0460B9B11937201100B6DE04 /* UIViewController+REXSideMenu.m */,
 			);
 			path = REXSideMenu;
 			sourceTree = "<group>";
@@ -647,6 +652,7 @@
 				0423C33C192B056500B37931 /* PullRefreshTableView.m in Sources */,
 				04F039D4192616AB006BE202 /* AFURLRequestSerialization.m in Sources */,
 				04D236E61923152C00C6A547 /* AppDelegate.m in Sources */,
+				0460B9B21937201100B6DE04 /* UIViewController+REXSideMenu.m in Sources */,
 				044FD65F192EE96100901AB3 /* User.m in Sources */,
 				04F039EF192616C0006BE202 /* UIRefreshControl+AFNetworking.m in Sources */,
 				04F039D5192616AB006BE202 /* AFURLResponseSerialization.m in Sources */,
