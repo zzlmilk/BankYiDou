@@ -51,6 +51,7 @@
         
         block(privileges,nil);
         
+        
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         NSLog(@"%@",error);
     }];

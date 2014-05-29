@@ -61,7 +61,6 @@
 
 
 
-
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *kCellID = @"PrivilegeTableViewCellID";
     PrivilegeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kCellID];

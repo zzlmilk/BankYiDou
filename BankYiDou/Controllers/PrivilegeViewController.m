@@ -31,16 +31,17 @@
     // Do any additional setup after loading the view.
      privilegeDataSource= [[PrivilegeDataSource alloc]initWithTableView:self.privilegeTableView];
     
-    
-
     [privilegeDataSource loadPrivileges];
+    
     
     
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.tabBarController.tabBar.translucent = NO;
 
     
+    
 }
+
 
 
 - (void)didReceiveMemoryWarning

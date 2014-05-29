@@ -29,8 +29,6 @@
         self.timeLabel.text=privilege.time;
         [self.privilegeImageView setImageWithURL:[NSURL URLWithString:privilege.privilegeImageUrl] placeholderImage:[UIImage imageNamed:@"icon-gear"]];
     }
-    
 }
-
 
 @end

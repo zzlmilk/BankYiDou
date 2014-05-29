@@ -27,6 +27,8 @@
 		044FD662192EED3F00901AB3 /* ResultData.m in Sources */ = {isa = PBXBuildFile; fileRef = 044FD661192EED3F00901AB3 /* ResultData.m */; };
 		044FD665192EF60100901AB3 /* Error.m in Sources */ = {isa = PBXBuildFile; fileRef = 044FD664192EF60100901AB3 /* Error.m */; };
 		044FD669192EF78F00901AB3 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 044FD668192EF78F00901AB3 /* MBProgressHUD.m */; };
+		044FD6B0192F49F800901AB3 /* REXSIdeMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 044FD6AF192F49F800901AB3 /* REXSIdeMenu.m */; };
+		0460B9AF1937087600B6DE04 /* HomeTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0460B9AE1937087600B6DE04 /* HomeTestViewController.m */; };
 		04D236D61923152C00C6A547 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D236D51923152C00C6A547 /* Foundation.framework */; };
 		04D236D81923152C00C6A547 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D236D71923152C00C6A547 /* CoreGraphics.framework */; };
 		04D236DA1923152C00C6A547 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D236D91923152C00C6A547 /* UIKit.framework */; };
@@ -106,6 +108,10 @@
 		044FD664192EF60100901AB3 /* Error.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Error.m; sourceTree = "<group>"; };
 		044FD667192EF78F00901AB3 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		044FD668192EF78F00901AB3 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		044FD6AE192F49F800901AB3 /* REXSIdeMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REXSIdeMenu.h; sourceTree = "<group>"; };
+		044FD6AF192F49F800901AB3 /* REXSIdeMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REXSIdeMenu.m; sourceTree = "<group>"; };
+		0460B9AD1937087600B6DE04 /* HomeTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTestViewController.h; sourceTree = "<group>"; };
+		0460B9AE1937087600B6DE04 /* HomeTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTestViewController.m; sourceTree = "<group>"; };
 		04D236D21923152C00C6A547 /* BankYiDou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankYiDou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04D236D51923152C00C6A547 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		04D236D71923152C00C6A547 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -274,6 +280,24 @@
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
+		044FD6AD192F49D100901AB3 /* REXSideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				044FD6AE192F49F800901AB3 /* REXSIdeMenu.h */,
+				044FD6AF192F49F800901AB3 /* REXSIdeMenu.m */,
+			);
+			path = REXSideMenu;
+			sourceTree = "<group>";
+		};
+		0460B9AC1937086900B6DE04 /* TestViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0460B9AD1937087600B6DE04 /* HomeTestViewController.h */,
+				0460B9AE1937087600B6DE04 /* HomeTestViewController.m */,
+			);
+			path = TestViewController;
+			sourceTree = "<group>";
+		};
 		04D236C91923152C00C6A547 = {
 			isa = PBXGroup;
 			children = (
@@ -355,6 +379,7 @@
 		04D237041923155900C6A547 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0460B9AC1937086900B6DE04 /* TestViewController */,
 				04F039B919261185006BE202 /* PrivilegeViewControllers */,
 				04F039B219261067006BE202 /* FrameViewController */,
 				04D23708192315DB00C6A547 /* LoginViewControllers */,
@@ -478,6 +503,7 @@
 		04F039F1192616F0006BE202 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				044FD6AD192F49D100901AB3 /* REXSideMenu */,
 				0423C335192B049000B37931 /* DataSources */,
 				04F039F319261722006BE202 /* Networking */,
 			);
@@ -612,6 +638,7 @@
 				04F039CE192616AB006BE202 /* AFHTTPRequestOperation.m in Sources */,
 				04F039EC192616C0006BE202 /* UIButton+AFNetworking.m in Sources */,
 				0434947F1929EC2C0003F137 /* Privilege.m in Sources */,
+				044FD6B0192F49F800901AB3 /* REXSIdeMenu.m in Sources */,
 				04F039D1192616AB006BE202 /* AFNetworkReachabilityManager.m in Sources */,
 				04F039EE192616C0006BE202 /* UIProgressView+AFNetworking.m in Sources */,
 				044FD669192EF78F00901AB3 /* MBProgressHUD.m in Sources */,
@@ -629,6 +656,7 @@
 				04F039EB192616C0006BE202 /* UIAlertView+AFNetworking.m in Sources */,
 				04F039CF192616AB006BE202 /* AFHTTPRequestOperationManager.m in Sources */,
 				0423C338192B049B00B37931 /* PullRefreshTableViewDataSource.m in Sources */,
+				0460B9AF1937087600B6DE04 /* HomeTestViewController.m in Sources */,
 				0423C340192B079000B37931 /* PrivilegeDataSource.m in Sources */,
 				04F039F619261742006BE202 /* BankAppAPIClient.m in Sources */,
 				04F039D2192616AB006BE202 /* AFSecurityPolicy.m in Sources */,
