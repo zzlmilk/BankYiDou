@@ -10,10 +10,11 @@
 
 @interface REXSIdeMenu ()
 
-
+@property (assign, readwrite, nonatomic) BOOL visible;
 @property (assign, readwrite, nonatomic) BOOL leftMenuVisible;
 @property (strong, readwrite, nonatomic) UIView *menuViewContainer;
 @property (strong, readwrite, nonatomic) UIView *contentViewContainer;
+
 
 @property (strong, readwrite, nonatomic) UIButton *contentButton;
 
@@ -99,6 +100,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.contentButton = ({
+        UIButton *button = [[UIButton alloc]initWithFrame:CGRectNull];
+        [button addTarget:self
+                   action:@selector(hideMenuViewController) forControlEvents:UIControlEventTouchUpInside];
+        button;
+    });
+    
+    
     [self.view addSubview:self.menuViewContainer];
     [self.view addSubview:self.contentViewContainer];
     
@@ -143,6 +152,8 @@
     }
     self.leftMenuViewController.view.hidden = NO;
     [self.view.window endEditing:YES];
+    [self __addContentButton];
+    
     
     [UIView animateWithDuration:self.animationDuration animations:^{
        self.contentViewContainer.center = CGPointMake(self.contentViewInPortraitOffsetCenterX + CGRectGetWidth(self.view.frame), self.contentViewContainer.center.y);
@@ -154,9 +165,41 @@
 }
 
 
+
 - (void)__hideMenuViewControllerAnimated:(BOOL)animated
 {
+    self.visible = NO;
+    self.leftMenuViewController = NO;
+    [self.contentButton removeFromSuperview];
     
+   __typeof (self)  __weak weakSelf = self;
+    
+    void(^animationBlock)(void)=^{
+      __typeof (weakSelf)  __strong strongSelf = weakSelf;
+        if (!strongSelf) {
+            return ;
+        }
+        
+        strongSelf.contentViewContainer.transform = CGAffineTransformIdentity;
+        strongSelf.contentViewContainer.frame = strongSelf.view.bounds;
+    };
+    
+    void (^completionBlock)(void) = ^{
+        __typeof (weakSelf) __strong strongSelf = weakSelf;
+        if (!strongSelf) {
+            return;
+        }
+
+    };
+    
+    if (animated) {
+        [[UIApplication sharedApplication]beginIgnoringInteractionEvents];
+        [UIView animateWithDuration:self.animationDuration animations:^{
+            animationBlock();
+        } completion:^(BOOL finished) {
+            completionBlock();
+        }];
+    }
 }
 
 
